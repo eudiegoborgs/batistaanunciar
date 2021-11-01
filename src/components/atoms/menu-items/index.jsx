@@ -1,30 +1,38 @@
 const items = [
   {
-    "path": "/",
+    "path": "/#inicio",
     "name": "Início"
   },
   {
-    "path": "#historia",
+    "path": "/#quem-somos",
     "name": "Quem somos"
   },
+  // {
+  //   "path": "#ministerios",
+  //   "name": "Ministérios"
+  // },
   {
-    "path": "#localizacao",
+    "path": "/#cultos",
+    "name": "Cultos"
+  },
+  {
+    "path": "/#localizacao",
     "name": "Onde estamos"
   },
+  // {
+  //   "path": "#eventos",
+  //   "name": "Eventos"
+  // },
+  // {
+  //   "path": "#blog",
+  //   "name": "Blog"
+  // },
   {
-    "path": "#eventos",
-    "name": "Eventos"
-  },
-  {
-    "path": "#blog",
-    "name": "Blog"
-  },
-  {
-    "path": "#contribua",
+    "path": "/#contribua",
     "name": "Contribua"
   },
   {
-    "path": "#contato",
+    "path": "/#contato",
     "name": "Contato"
   },
 ];

@@ -10,21 +10,24 @@ const style = css`
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 80vh;
-  color: #ffffff;
+  color: black;
   text-align: left;
   overflow: hidden;
 
   .caption {
-    padding: 25vh 40px;
-    height: 80vh;
-    background-image: linear-gradient(#212121, rgba(33,33,33, 0.8));
+    padding: 20vh 40px;
+    background-image: linear-gradient(#FFF, rgba(255,255,255, 0.8));
   }
 
   a {
-    color: white !important;
+    color: black !important;
     margin: 15px 0px;
     margin-right: 20px;
+  }
+
+  .section_title {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
   }
 `
 
@@ -33,7 +36,7 @@ const Banner = () => (
     <div className="caption">
       <div className="container">
         <TypeWritter />
-        <small>Acompanhe-nos em nossas redes sociais:</small><br/>
+        <small><em>Acompanhe nossas redes sociais:</em></small><br/>
         <SocialMenu />
       </div>
     </div>

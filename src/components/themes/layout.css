@@ -10,6 +10,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: #212121;
   transition: 0.5s ease all;
+  --black: #000000;
+  --white: #FFFFFF;
+  --primary: #2C5E77;
+  --primary-light: #41ABB8;
 }
 article,
 aside,
@@ -74,6 +78,7 @@ a.blog-link {
 a:active,
 a:hover {
   outline-width: 0;
+  color: var(--primary-light)
 }
 abbr[title] {
   border-bottom: none;
@@ -94,7 +99,7 @@ h1 {
 }
 mark {
   background-color: #ff0;
-  color: #000;
+  color: var(--black);
 }
 small {
   font-size: 80%;
@@ -672,12 +677,32 @@ h2 {
 }
 
 
-main h2::after {
-  margin: 10px auto;
+.section_title::after {
+  margin-top: 10px;
   margin-bottom: 20px;
   content: "";
   display: block;
   width: 50px;
-  background: black;
+  background: var(--primary-light);
   height: 5px;
+}
+
+.dark {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.primary {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.primary_light {
+  background-color: var(--primary-light);
+  color: var(--white);
+}
+
+.dark .section_title::after, 
+.primary_light .section_title::after {
+  background: var(--primary);
 }

@@ -26,18 +26,18 @@ const style = css `
   }
   .menu-item {
     padding: 2px 0px;
-    margin: 0px 7px;
+    margin: 0px 5px;
     color: black;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     border-bottom: solid 3px transparent;
     @media(max-width: 780px) {
-      padding: 0 5px;
+      padding: 0 6px;
     }
     &:hover, &[aria-current="page"] {
-      border-bottom: solid 3px black;
+      border-bottom: solid 3px var(--primary-light);
       color: black;
     }
   }

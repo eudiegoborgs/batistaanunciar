@@ -132,7 +132,7 @@ const Footer = () => (
           <phone className="describe_text">Telefone: 31 3437-0763</phone>
           <h5>Contribua:</h5>
           <p className="describe_text">
-            "Entregaram-se primeiramente a si mesmos ao Senhor e, depois, a nós, pela vontade de Deus." - 2 Coríntios 8:5
+            "Cada um dê conforme determinou em seu coração, não com pesar ou por obrigação, pois Deus ama quem dá com alegria." - 2 Coríntios 9:7
           </p>
           <p className="describe_text">
             PIX: <strong>31 98649-2928</strong>

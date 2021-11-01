@@ -5,11 +5,11 @@ const Content = ({ children }) => {
       <div
         style={{
           maxWidth: 960,
-          margin: `3rem auto`,
-          padding: '0 30px'
+          margin: `0 auto`,
+          padding: '3rem 30px'
         }}
       >
-        <main>{children}</main>
+        {children}
       </div>
   )
 }

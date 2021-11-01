@@ -8,6 +8,7 @@ const style = css`
   position: fixed;
   top: 0;
   width: 100vw;
+  z-index: 999;
 
   .right, .left {
     display: flex;
