@@ -6,7 +6,8 @@ const style = css`
 `
 
 const Contact = () => (
-  <section id="contato" className={`${style} primary_light`}>
+  <section className={`${style} primary_light`}>
+    <a className="anchor" id="contato"/>
     <Content>
       <h2 className="section_title">Fale conosco</h2>
     </Content>

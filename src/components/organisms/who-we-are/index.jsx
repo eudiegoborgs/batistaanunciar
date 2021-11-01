@@ -6,7 +6,8 @@ const style = css`
 `
 
 const WhoWeAre = () => (
-  <section id="quem-somos" className={`${style} primary_light`}>
+  <section className={`${style} primary_light`}>
+    <a className="anchor" id="quem-somos"/>
     <Content>
       <h2 className="section_title">Quem somos</h2>
       <p>

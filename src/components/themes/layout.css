@@ -676,6 +676,16 @@ h2 {
   margin-bottom: 0.5rem;
 }
 
+section {
+  offset-anchor: 100px;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -90px;
+  visibility: hidden;
+}
 
 .section_title::after {
   margin-top: 10px;

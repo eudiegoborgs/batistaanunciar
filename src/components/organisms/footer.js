@@ -129,7 +129,7 @@ const Footer = () => (
             Belo Horizonte/MG<br/>
             CEP: 31.742-750.
           </address>
-          <phone className="describe_text">Telefone: 31 3437-0763</phone>
+          <p className="describe_text">Telefone: 31 3437-0763</p>
           <h5>Contribua:</h5>
           <p className="describe_text">
             "Cada um dê conforme determinou em seu coração, não com pesar ou por obrigação, pois Deus ama quem dá com alegria." - 2 Coríntios 9:7

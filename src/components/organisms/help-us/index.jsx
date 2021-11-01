@@ -6,7 +6,8 @@ const style = css`
 `
 
 const HelpUs = () => (
-  <section id="contribua" className={`${style} dark`}>
+  <section className={`${style} dark`}>
+    <a className="anchor" id="contribua"/>
     <Content>
       <h2 className="section_title">Contribua</h2>
     </Content>

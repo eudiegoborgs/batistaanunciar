@@ -6,7 +6,8 @@ const style = css`
 `
 
 const Meetings = () => (
-  <section id="cultos" className={`${style}`}>
+  <section className={`${style}`}>
+    <a className="anchor" id="cultos"/>
     <Content>
       <h2 className="section_title">Cultos</h2>
     </Content>

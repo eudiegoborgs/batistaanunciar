@@ -15,10 +15,6 @@ const items = [
     "path": "/#cultos",
     "name": "Cultos"
   },
-  {
-    "path": "/#localizacao",
-    "name": "Onde estamos"
-  },
   // {
   //   "path": "#eventos",
   //   "name": "Eventos"
@@ -34,6 +30,10 @@ const items = [
   {
     "path": "/#contato",
     "name": "Contato"
+  },
+  {
+    "path": "/#localizacao",
+    "name": "Onde estamos"
   },
 ];
 
