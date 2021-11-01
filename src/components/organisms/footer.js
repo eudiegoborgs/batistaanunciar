@@ -19,17 +19,28 @@ const style = css`
   }
   .main {
     display: flex;
-    max-width: 100%;
+    @media(max-width: 560px) {
+      display: block;
+    }
+    width: 100%;
     border-bottom: solid 1px #ababab;
     >div {
-      max-width: 25%;
+      width: 25%;
       padding: 10px;
+      @media(max-width: 560px) {
+        width: 100%;
+      }
     }
   }
   .footer_logo {
     img {
       padding: 0;
       margin: 0;
+      @media(max-width: 560px) {
+        margin: 0 auto;
+        display: block;
+        width: 50%;
+      }
     }
     text-align: center;
   }
@@ -46,6 +57,10 @@ const style = css`
     margin-bottom: 0.5rem;
   }
   .footer_sitemap {
+    padding: 10px 20px !important;
+    @media(max-width: 560px) {
+      display: none;
+    }
     ul {
       list-style-type: square;
       margin: 0 1rem;

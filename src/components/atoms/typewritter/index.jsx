@@ -3,6 +3,9 @@ import { css } from 'emotion';
 
 const style = css`
   max-width: 40%;
+  @media(max-width: 560px) {
+    max-width: 100%;
+  }
   h2 {
     margin-bottom: 0.5rem;
     :after {

@@ -4,7 +4,7 @@ const items = [
     "name": "Início"
   },
   {
-    "path": "/historia",
+    "path": "#historia",
     "name": "Quem somos"
   },
   {
@@ -12,11 +12,11 @@ const items = [
     "name": "Onde estamos"
   },
   {
-    "path": "/eventos",
+    "path": "#eventos",
     "name": "Eventos"
   },
   {
-    "path": "/blog",
+    "path": "#blog",
     "name": "Blog"
   },
   {
