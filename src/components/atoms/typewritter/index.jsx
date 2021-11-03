@@ -18,7 +18,7 @@ const TypeWritter = () => {
   return (
     <div className={style}>
       <h2 className="section_title">Seja bem vindo à <br/>Igreja Batista Anunciar</h2>
-      <p><em>A nossa principal missão é pregar o evangelho de Cristo, edificando uma igreja de discipulos através da visão celular.</em></p>
+      <p><em>Uma igreja apaixonada e apaixonante.</em></p>
     </div>
   )
 }
