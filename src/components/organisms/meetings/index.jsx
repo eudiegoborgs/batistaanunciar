@@ -15,25 +15,33 @@ const style = css`
     margin-top: 3rem;
     display: flex;
     justify-content: space-between;
+    @media(max-width: 560px) {
+      display: block;
+    }
     >div {
       width: 25%;
+      @media(max-width: 560px) {
+        width: 100%;
+      }
       padding: 15px;
       text-align: center;
-      &::before {
-        margin-top: 30px;
-        margin-left: -15px;
-        margin-bottom: 20px;
-        content: "";
-        display: block;
-        position: absolute;
-        width: 1px;
-        background: var(--black);
-        height: 60px;
-        opacity: .2;
-      }
-      &:first-child {
+      @media(min-width: 560px) {
         &::before {
-          background: transparent;
+          margin-top: 30px;
+          margin-left: -15px;
+          margin-bottom: 20px;
+          content: "";
+          display: block;
+          position: absolute;
+          width: 1px;
+          background: var(--black);
+          height: 60px;
+          opacity: .2;
+        }
+        &:first-child {
+          &::before {
+            background: transparent;
+          }
         }
       }
       p {
