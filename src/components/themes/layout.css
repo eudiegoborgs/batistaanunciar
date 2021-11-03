@@ -14,6 +14,11 @@ body {
   --white: #FFFFFF;
   --primary: #2C5E77;
   --primary-light: #41ABB8;
+  --mq-xxl: 1080px;
+  --mq-xl: 960px;
+  --mq-lg: 780px;
+  --mq-md: 560px;
+  --mq-sm: 480px;
 }
 article,
 aside,
@@ -715,4 +720,10 @@ a.anchor {
 .dark .section_title::after, 
 .primary_light .section_title::after {
   background: var(--primary);
+}
+
+.body__secondary {
+  font-size: 0.8rem;
+  line-height: 1rem;
+  margin: 0;
 }

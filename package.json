@@ -5,6 +5,9 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@fontsource/open-sans": "^4.5.2",
+    "@fontsource/playfair-display": "^4.5.0",
+    "@fontsource/playfair-display-sc": "^4.5.0",
     "emotion": "^10.0.17",
     "font-awesome": "^4.7.0",
     "gatsby": "^2.21.26",

@@ -47,11 +47,6 @@ const style = css`
   a {
     color: white;
   }
-  .footer_menu_item, .describe_text {
-    font-size: 0.8rem;
-    line-height: 1rem;
-    margin: 0;
-  }
   .describe_text {
     font-style: italic;
     margin-bottom: 0.5rem;
@@ -97,15 +92,15 @@ const Footer = () => (
           <SocialMenu />
         </div>
         <div className="footer_resume">
-          <p className="describe_text">
+          <p className="describe_text body__secondary">
             A nossa principal missão é pregar o evangelho de Cristo, somos a <strong>Igreja Batista Anunciar</strong>.
           </p>
           <h5>Visão:</h5>
-          <p className="describe_text">
+          <p className="describe_text body__secondary">
             Ser um sinal histórico do reino de Deus, edificando uma igreja de discipulos
           </p>
           <h5>Missão:</h5>
-          <p className="describe_text">
+          <p className="describe_text body__secondary">
             Capacitação e treinamento dos membros como discipulos do evangelho de Cristo na visão celular.
           </p>
         </div>
@@ -114,7 +109,7 @@ const Footer = () => (
           <ul>
             {items.map(i => (
               <li>
-                <Link to={i.path} className="footer_menu_item">
+                <Link to={i.path} className="body__secondary">
                   {i.name}
                 </Link>
               </li>
@@ -123,18 +118,18 @@ const Footer = () => (
         </div>
         <div className="footer_contact_info">
           <h5 className="title">Contato:</h5>
-          <address className="describe_text">
+          <address className="describe_text body__secondary">
             Endereço:<br/>
             Rua Pau Brasil, nº 40, Solimões<br/>
             Belo Horizonte/MG<br/>
             CEP: 31.742-750.
           </address>
-          <p className="describe_text">Telefone: 31 3437-0763</p>
+          <p className="describe_text body__secondary">Telefone: 31 3437-0763</p>
           <h5>Contribua:</h5>
-          <p className="describe_text">
-            "Cada um dê conforme determinou em seu coração, não com pesar ou por obrigação, pois Deus ama quem dá com alegria." - 2 Coríntios 9:7
+          <p className="describe_text body__secondary">
+            "Cada um dê conforme determinou em seu coração, não com pesar ou por obrigação, pois Deus ama quem dá com alegria." <br/>- 2 Coríntios 9:7
           </p>
-          <p className="describe_text">
+          <p className="describe_text body__secondary">
             PIX: <strong>31 98649-2928</strong>
           </p>
         </div>
