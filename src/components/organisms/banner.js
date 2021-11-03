@@ -10,6 +10,7 @@ const style = css`
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: bottom;
   color: black;
   text-align: left;
   overflow: hidden;
