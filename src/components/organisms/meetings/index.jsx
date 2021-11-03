@@ -85,7 +85,7 @@ const Meetings = () => (
             Toda segunda-feira às<br/>20:00
           </p>
           <p><strong>Públic Alvo:</strong> <br/>
-          Todos os membros, familiares e visitantes.</p>
+          Geral.</p>
         </div>
         <div>
           <h4>Culto de Celebração</h4>
@@ -93,7 +93,7 @@ const Meetings = () => (
             Todo domingo às<br/>09:30 | 17:00 | 19:30
           </p>
           <p><strong>Públic Alvo:</strong> <br/>
-          Todos os membros, familiares e visitantes.</p>
+          Geral.</p>
         </div>
         <div>
           <h4>Culto Diamante</h4>
@@ -101,7 +101,7 @@ const Meetings = () => (
             2º sábado do mês às<br/>16:30
           </p>
           <p><strong>Públic Alvo:</strong> <br/>
-          Pessoas idosas.</p>
+          Idosos.</p>
         </div>
         <div>
           <h4>Juventude Anunciar</h4>
