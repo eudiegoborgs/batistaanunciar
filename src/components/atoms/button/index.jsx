@@ -14,6 +14,9 @@ const style = css `
     background: transparent;
     color: var(--white);
   }
+  &[disable=true] {
+    opacity: 0.3;
+  }
 `;
 
 const Button = props => (

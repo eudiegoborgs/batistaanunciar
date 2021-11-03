@@ -54,36 +54,57 @@ const style = css`
   }
 `
 
-const Contact = () => (
-  <section className={`primary_light`}>
-    <a className="anchor" id="contato"/>
-    <Content>
-      <div className={style}>
-        <div className="title">
-          <h2 className="section_title">
-            Se preferir, você também pode nos enviar uma mensagem. <br/> <strong>É um grande prazer te ouvir ;)</strong>
-          </h2>
-          <p className="body__secondary">
-            Você pode usar esse canal para enviar mensagens aos nossos pastores, fazer pedidos de oração, registrar testemunhos, pedir conselhos, conhecer mais sobre Cristo, entregar sua vida para Jesus, ou qualquer outro assunto que você ache necessário.
-          </p>
-        </div>
-        <div className="content">
-          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" className={style}>
-            <input type="hidden" name="bot-field" />
-            <input type="hidden" name="form-name" value="contact" />
-            <p>
-              <label>Nome: <input type="text" name="name" /></label>
-              <label>E-mail: <input type="email" name="email" /></label>
-              <label>Mensagem: <textarea name="message"></textarea></label>
-            </p>
-            <p className="submit">
-              <Button type="submit">Enviar uma mensagem</Button>
-            </p>
-          </form>
-        </div>
-      </div>
-    </Content>
-  </section>
-)
+const Contact = () => { 
+  const [sended, setSended] = React.useState(false);
+  const [exception, setException] = React.useState(false);
 
+  const onSubmit = event => {
+    event.preventDefault()
+    let myForm = document.getElementById('contact');
+    let formData = new FormData(myForm)
+    fetch('/', {
+      method: 'POST',
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString()
+    })
+      .then(() => setSended("Mensagem enviada com sucesso"))
+      .catch((error) =>setException("Erro ao enviar mensagem. Tente novamente."))
+  }
+
+  return (
+    <section className={`primary_light`}>
+      <a className="anchor" id="contato"/>
+      <Content>
+        <div className={style}>
+          <div className="title">
+            <h2 className="section_title">
+              Se preferir, você também pode nos enviar uma mensagem. <br/> <strong>É um grande prazer te ouvir ;)</strong>
+            </h2>
+            <p className="body__secondary">
+              Você pode usar esse canal para enviar mensagens aos nossos pastores, fazer pedidos de oração, registrar testemunhos, pedir conselhos, conhecer mais sobre Cristo, entregar sua vida para Jesus, ou qualquer outro assunto que você ache necessário.
+            </p>
+          </div>
+          <div className="content">
+            <form name="contact" id="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" className={style} onSubmit={onSubmit}>
+              <input type="hidden" name="bot-field" />
+              <input type="hidden" name="form-name" value="contact" />
+              <div style={{
+                marginBottom: 30
+              }}>
+                <label>Nome: <input type="text" name="name" /></label>
+                <label>E-mail: <input type="email" name="email" /></label>
+                <label>Mensagem: <textarea name="message"></textarea></label>
+                <p className="body__secondary"><em>{sended || exception}</em></p>
+              </div>
+              {!sended && (<div className="submit">
+                <Button type="submit" disabled={sended}>Enviar uma mensagem</Button>
+              </div>)}
+              
+            </form>
+          </div>
+        </div>
+      </Content>
+    </section>
+  )
+}
 export default Contact;
