@@ -66,25 +66,25 @@ const Meetings = () => (
         <div>
           <h4>Anunciar TEEN</h4>
           <p>
-            Toda terça-feira ás<br/>20:00
+            Toda terça-feira às<br/>20:00
           </p>
         </div>
         <div>
           <h4>Escola Bíblica</h4>
           <p>
-            Toda segunda-feira ás<br/>20:00
+            Toda segunda-feira às<br/>20:00
           </p>
         </div>
         <div>
           <h4>Culto de Celebração</h4>
           <p>
-            Todo domingo ás<br/>09:30 | 17:00 | 19:30
+            Todo domingo às<br/>09:30 | 17:00 | 19:30
           </p>
         </div>
         <div>
           <h4>Juventude Anunciar</h4>
           <p>
-            Todo sábado ás<br/>20:00
+            Todo sábado às<br/>20:00
           </p>
         </div>
       </div>
