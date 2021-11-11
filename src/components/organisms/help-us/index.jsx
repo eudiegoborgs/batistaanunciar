@@ -42,7 +42,7 @@ const HelpUs = () => (
   <section className={`${style} dark`}>
     <a className="anchor" id="contribua"/>
     <Content>
-      <h2 className="section_title">Nos ajude a manter essa obra</h2>
+      <h2 className="section_title gradient__text gradient__text__light">Nos ajude a manter essa obra</h2>
       <div className="content">
         <div className="info">
           <p>

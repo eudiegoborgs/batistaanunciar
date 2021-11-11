@@ -69,7 +69,7 @@ const Meetings = () => (
   <section className={`${style}`}>
     <a className="anchor" id="cultos"/>
     <Content>
-      <h2 className="section_title">Cultos</h2>
+      <h2 className="section_title gradient__text">Cultos</h2>
       <div className="content">
         <div>
           <h4>Anunciar TEEN</h4>

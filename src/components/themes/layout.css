@@ -19,6 +19,7 @@ body {
   --mq-lg: 780px;
   --mq-md: 560px;
   --mq-sm: 480px;
+  --gradientDegree: 135deg;
 }
 article,
 aside,
@@ -726,4 +727,19 @@ a.anchor {
   font-size: 0.8rem;
   line-height: 1rem;
   margin: 0;
+}
+
+.gradient__text {
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+  background-image: linear-gradient(var(--gradientDegree), var(--black), var(--primary));
+}
+
+.gradient__text__light {
+  background-image: linear-gradient(var(--gradientDegree), var(--white), var(--primary-light));
 }

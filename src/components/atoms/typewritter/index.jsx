@@ -17,7 +17,7 @@ const style = css`
 const TypeWritter = () => {
   return (
     <div className={style}>
-      <h2 className="section_title">Seja bem vindo à <br/>Igreja Batista Anunciar</h2>
+      <h2 className="section_title gradient__text">Seja bem vindo à <br/>Igreja Batista Anunciar</h2>
       <p><em>Uma igreja apaixonada e apaixonante.</em></p>
     </div>
   )
