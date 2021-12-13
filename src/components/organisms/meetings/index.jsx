@@ -2,6 +2,39 @@ import React from 'react';
 import { css } from 'emotion';
 import Content from '../content';
 
+const meetings = [
+  {
+    name: 'Juventude Anunciar',
+    period: 'Todo sábado',
+    hour: '20:00',
+    target: 'Jovens'
+  },
+  {
+    name: 'Anunciar TEEN',
+    period: 'Toda terça-feira',
+    hour: '20:00',
+    target: 'Adolescentes'
+  },
+  {
+    name: 'Culto de celebração',
+    period: 'Todo domingo',
+    hour: '09:30 | 17:00 | 19:30',
+    target: 'Todos os membros'
+  },
+  {
+    name: 'Escola Bíblica',
+    period: 'Toda segunda',
+    hour: '20:00',
+    target: 'Todos os membros'
+  },
+  {
+    name: 'Culto Diamante',
+    period: '2º sábado do mês',
+    hour: '16:30',
+    target: 'Idosos'
+  }
+];
+
 const style = css`
   .section_title {
     text-align: center;
@@ -71,46 +104,16 @@ const Meetings = () => (
     <Content>
       <h2 className="section_title gradient__text">Cultos</h2>
       <div className="content">
-        <div>
-          <h4>Anunciar TEEN</h4>
-          <p>
-            Toda terça-feira às<br/>20:00
-          </p>
-          <p><strong>Públic Alvo:</strong> <br/>
-          Adolescentes.</p>
-        </div>
-        <div>
-          <h4>Escola Bíblica</h4>
-          <p>
-            Toda segunda-feira às<br/>20:00
-          </p>
-          <p><strong>Públic Alvo:</strong> <br/>
-          Geral.</p>
-        </div>
-        <div>
-          <h4>Culto de Celebração</h4>
-          <p>
-            Todo domingo às<br/>09:30 | 17:00 | 19:30
-          </p>
-          <p><strong>Públic Alvo:</strong> <br/>
-          Geral.</p>
-        </div>
-        <div>
-          <h4>Culto Diamante</h4>
-          <p>
-            2º sábado do mês às<br/>16:30
-          </p>
-          <p><strong>Públic Alvo:</strong> <br/>
-          Idosos.</p>
-        </div>
-        <div>
-          <h4>Juventude Anunciar</h4>
-          <p>
-            Todo sábado às<br/>20:00
-          </p>
-          <p><strong>Públic Alvo:</strong> <br/>
-          Jovens.</p>
-        </div>
+        {meetings.map(meeting => (
+          <div>
+            <h4>{meeting.name}</h4>
+            <p>
+              {meeting.period} às<br/>{meeting.hour}
+            </p>
+            <p><strong>Públic Alvo:</strong> <br/>
+            {meeting.target}.</p>
+          </div>
+        ))}
       </div>
     </Content>
   </section>
