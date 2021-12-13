@@ -23,7 +23,7 @@ const meetings = [
   },
   {
     name: 'Escola Bíblica',
-    period: 'Toda segunda',
+    period: 'Toda segunda-feira',
     hour: '20:00',
     target: 'Todos os membros'
   },
