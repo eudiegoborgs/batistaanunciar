@@ -130,7 +130,7 @@ const Footer = () => (
             "Cada um dê conforme determinou em seu coração, não com pesar ou por obrigação, pois Deus ama quem dá com alegria." <br/>- 2 Coríntios 9:7
           </p>
           <p className="describe_text body__secondary">
-            PIX: <strong>31 98649-2928</strong>
+            PIX: <strong>44.495.354/0001-20</strong>
           </p>
         </div>
       </div>

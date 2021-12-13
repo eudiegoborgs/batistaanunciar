@@ -1,7 +1,7 @@
 import React from 'react';
 import { css } from 'emotion';
 import Content from '../content';
-import qrcode from './qrcode.jpeg';
+import qrcode from './qrcode.png';
 
 const style = css`
   .content {
@@ -23,9 +23,10 @@ const style = css`
     }
   }
   .qrcode {
-    min-width: 30%;
+    min-width: 25%;
     img {
       margin: 0;
+      width: 100%;
     }
     small {
       font-style: italic;
@@ -42,7 +43,7 @@ const HelpUs = () => (
   <section className={`${style} dark`}>
     <a className="anchor" id="contribua"/>
     <Content>
-      <h2 className="section_title gradient__text gradient__text__light">Nos ajude a manter essa obra</h2>
+      <h2 className="section_title">Nos ajude a manter essa obra</h2>
       <div className="content">
         <div className="info">
           <p>
@@ -51,12 +52,11 @@ const HelpUs = () => (
           </p>
           <h4>Dados bancários:</h4>
           <ul>
-            <li><strong>Banco:</strong> Caixa Economica Federal</li>
-            <li><strong>Agência:</strong> 2983</li>
-            <li><strong>Conta:</strong> 3441-5</li>
-            <li><strong>Operação:</strong> 003</li>
-            <li><strong>Titula:</strong> Primeira Igreja Batista Floramar</li>
-            <li><strong>PIX (Telefone):</strong> 31986492928</li>
+            <li><strong>Banco:</strong> Cora SCD - 403</li>
+            <li><strong>Agência:</strong> 0001</li>
+            <li><strong>Conta:</strong> 1646331-8</li>
+            <li><strong>Titula:</strong> Igreja Batista Anunciar</li>
+            <li><strong>PIX (CNPJ):</strong> 44.495.354/0001-20</li>
           </ul>
         </div>
         <div className="qrcode">

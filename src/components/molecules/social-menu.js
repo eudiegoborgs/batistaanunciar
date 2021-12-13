@@ -20,6 +20,10 @@ const socialList = [
   {
     icon: 'youtube',
     link: 'https://www.youtube.com/c/ConnectSolim%C3%B5es'
+  },
+  {
+    icon: 'whatsapp',
+    link: 'https://api.whatsapp.com/send?phone=553134370763'
   }
 ]
 

@@ -7,6 +7,7 @@ import WhoWeAre from "../components/organisms/who-we-are"
 import Meetings from "../components/organisms/meetings"
 import HelpUs from "../components/organisms/help-us"
 import Contact from "../components/organisms/contact"
+import Events from "../components/organisms/events"
 import Location from "../components/organisms/location"
 
 const IndexPage = () => (
@@ -16,11 +17,11 @@ const IndexPage = () => (
       <Banner />
       <WhoWeAre />
       <Meetings />
+      {/* <Events /> */}
       <HelpUs />
       <Contact />
       <Location />
     </main>
-      {/* <BlogResume /> */}
   </Layout>
 )
 
